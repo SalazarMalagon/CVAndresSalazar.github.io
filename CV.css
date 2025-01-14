@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    
+    display: flex;
+    background-color: #004b87;
+    color: white;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1080px; /* Limita el ancho máximo a 1080px */
+    margin-left: auto; /* Centra el cuadro en la página */
+    margin-right: auto; /* Centra el cuadro en la página */
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    flex: 1 1 auto;
+    margin-left: 20px;
+    text-align: right;  /* Alinea el texto a la derecha */
+}
+
+.contact-info h1 {
+    font-size: 2em;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    max-width: 1900px; /* Limita el ancho máximo a 1080px */
+    margin-left: auto; /* Centra el cuadro en la página */
+    margin-right: auto; /* Centra el cuadro en la página */
+}
+
+h2 {
+    color: #004b87;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.job, .degree, .course {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #004b87;
+    font-size: 1.2em;
+}
+
+em {
+    color: #888;
+}

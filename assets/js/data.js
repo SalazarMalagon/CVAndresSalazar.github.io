@@ -14,7 +14,7 @@ window.CERTIFICATES = [
     {
         id: "cisco-seguridad-terminales",
         title: "Endpoint Security",
-        subtitle: "Seguridad de Terminales",
+        titleEs: "Seguridad de Terminales",
         issuer: "Cisco Networking Academy · MinTIC",
         group: "Cisco",
         category: "Cybersecurity",
@@ -28,7 +28,7 @@ window.CERTIFICATES = [
     {
         id: "cisco-gestion-amenazas",
         title: "Cyber Threat Management",
-        subtitle: "Administración de Amenazas Cibernéticas",
+        titleEs: "Administración de Amenazas Cibernéticas",
         issuer: "Cisco Networking Academy · MinTIC",
         group: "Cisco",
         category: "Cybersecurity",
@@ -42,7 +42,7 @@ window.CERTIFICATES = [
     {
         id: "cisco-defensa-red",
         title: "Network Defense",
-        subtitle: "Defensa de la Red",
+        titleEs: "Defensa de la Red",
         issuer: "Cisco Networking Academy · MinTIC",
         group: "Cisco",
         category: "Cybersecurity",
@@ -56,7 +56,7 @@ window.CERTIFICATES = [
     {
         id: "cisco-intro-ciberseguridad",
         title: "Introduction to Cybersecurity",
-        subtitle: "Introducción a la Ciberseguridad",
+        titleEs: "Introducción a la Ciberseguridad",
         issuer: "Cisco Networking Academy · MinTIC",
         group: "Cisco",
         category: "Cybersecurity",

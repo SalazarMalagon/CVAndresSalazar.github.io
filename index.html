@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Felipe Salazar Malagon · Systems Engineer</title>
-    <meta name="description" content="Systems Engineer, full stack developer and co-founder of CareFlow. Experience in web platforms, data, AI and LLM evaluation.">
+    <title data-i18n="meta.home.title">Andres Felipe Salazar Malagon · Systems Engineer</title>
+    <meta name="description" data-i18n-attr="content:meta.home.desc" content="Systems Engineer, full stack developer and co-founder of CareFlow. Experience in web platforms, data, AI and LLM evaluation.">
     <meta property="og:title" content="Andres Felipe Salazar Malagon · Systems Engineer">
     <meta property="og:description" content="Full stack developer and co-founder of CareFlow. Resume, projects and certificates.">
     <meta property="og:image" content="assets/img/profile.jpg">
@@ -47,28 +47,32 @@
         </defs>
     </svg>
 
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <header class="nav">
         <div class="container">
-            <a class="brand" href="#top" aria-label="Andres Salazar, home">
+            <a class="brand" href="#top" aria-label="Andres Salazar, home" data-i18n-attr="aria-label:nav.home">
                 <span class="brand-mark">AS</span>
                 <span class="brand-name">Andres Salazar</span>
             </a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#credentials">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#credentials" data-i18n="nav.certs">Certificates</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.lang">
+                    <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+                    <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+                </div>
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-i18n-attr="aria-label:nav.theme">
                     <svg class="sun"><use href="#i-sun"/></svg>
                     <svg class="moon"><use href="#i-moon"/></svg>
                 </button>
-                <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" data-i18n-attr="aria-label:nav.menu" aria-controls="nav-links" aria-expanded="false">
                     <svg><use href="#i-menu"/></svg>
                 </button>
             </div>
@@ -84,17 +88,17 @@
                         <img src="assets/img/profile.jpg" alt="Andres Felipe Salazar Malagon" width="176" height="176">
                     </div>
                     <div class="reveal">
-                        <span class="eyebrow"><span class="dot"></span>Building CareFlow · Open to opportunities</span>
+                        <span class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Building CareFlow · Open to opportunities</span></span>
                         <h1>Andres Felipe Salazar Malagon</h1>
-                        <p class="role"><strong>Systems Engineer</strong> · <span class="typed" data-words="Full Stack Developer|Co-founder @ CareFlow|AI Training Specialist">Full Stack Developer</span></p>
+                        <p class="role"><strong data-i18n="hero.role">Systems Engineer</strong> · <span class="typed">Full Stack Developer</span></p>
                         <div class="hero-meta">
                             <span><svg><use href="#i-pin"/></svg>Bogotá, Colombia</span>
                             <span><svg><use href="#i-mail"/></svg><a href="mailto:pipesm062858@gmail.com">pipesm062858@gmail.com</a></span>
                             <span><svg><use href="#i-phone"/></svg><a href="tel:+573133722773">+57 313 372 2773</a></span>
                         </div>
                         <div class="hero-actions">
-                            <a class="btn btn-primary" href="#contact"><svg><use href="#i-mail"/></svg>Get in touch</a>
-                            <a class="btn" href="certificates.html"><svg><use href="#i-award"/></svg>Certificates</a>
+                            <a class="btn btn-primary" href="#contact"><svg><use href="#i-mail"/></svg><span data-i18n="hero.contact">Get in touch</span></a>
+                            <a class="btn" href="certificates.html"><svg><use href="#i-award"/></svg><span data-i18n="hero.certs">Certificates</span></a>
                             <a class="btn" href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
                             <a class="btn" href="https://github.com/SalazarMalagon" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
                         </div>
@@ -102,10 +106,10 @@
                 </div>
 
                 <div class="stats">
-                    <div class="stat reveal"><b>2026</b><span>Systems Engineering graduate</span></div>
-                    <div class="stat reveal"><b>7</b><span>Certificates</span></div>
-                    <div class="stat reveal"><b>9</b><span>Credly badges</span></div>
-                    <div class="stat reveal"><b>5</b><span>Featured projects</span></div>
+                    <div class="stat reveal"><b>2026</b><span data-i18n="stats.grad">Systems Engineering graduate</span></div>
+                    <div class="stat reveal"><b>7</b><span data-i18n="stats.certs">Certificates</span></div>
+                    <div class="stat reveal"><b>9</b><span data-i18n="stats.badges">Credly badges</span></div>
+                    <div class="stat reveal"><b>5</b><span data-i18n="stats.projects">Featured projects</span></div>
                 </div>
             </div>
         </section>
@@ -115,29 +119,29 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">About</span>
-                        <h2>Building software that solves real problems</h2>
+                        <span class="kicker" data-i18n="about.kicker">About</span>
+                        <h2 data-i18n="about.title">Building software that solves real problems</h2>
                     </div>
                 </div>
                 <div class="about-grid">
                     <div class="card reveal">
-                        <p>Systems Engineer from Universidad Distrital Francisco José de Caldas, focused on full stack software development, data, and artificial intelligence.</p>
-                        <p>I co-founded <strong>CareFlow</strong>, a SaaS platform for assisted nursing documentation that turns structured input into clinical notes ready for review and approval, where I lead engineering. Before that, I evaluated and improved Large Language Models as an <strong>AI Training Specialist at Scale AI</strong>.</p>
-                        <p>I enjoy building intuitive interfaces backed by solid, well-tested backends, and I'm always learning, with complementary training in networking and cybersecurity.</p>
+                        <p data-i18n="about.p1">Systems Engineer from Universidad Distrital Francisco José de Caldas, focused on full stack software development, data, and artificial intelligence.</p>
+                        <p data-i18n="about.p2">I co-founded <strong>CareFlow</strong>, a SaaS platform for assisted nursing documentation that turns structured input into clinical notes ready for review and approval, where I lead engineering. Before that, I evaluated and improved Large Language Models as an <strong>AI Training Specialist at Scale AI</strong>.</p>
+                        <p data-i18n="about.p3">I enjoy building intuitive interfaces backed by solid, well-tested backends, and I'm always learning, with complementary training in networking and cybersecurity.</p>
                     </div>
                     <div class="card reveal">
                         <ul class="facts">
-                            <li><small>Currently</small>Co-founder &amp; Head of Engineering, CareFlow</li>
-                            <li><small>Education</small>B.S. Systems Engineering, 2026</li>
-                            <li><small>Based in</small>Bogotá, Colombia</li>
+                            <li><small data-i18n="about.currently">Currently</small><span data-i18n="about.currentlyValue">Co-founder &amp; Head of Engineering, CareFlow</span></li>
+                            <li><small data-i18n="about.education">Education</small><span data-i18n="about.educationValue">B.S. Systems Engineering, 2026</span></li>
+                            <li><small data-i18n="about.based">Based in</small>Bogotá, Colombia</li>
                         </ul>
                         <div class="lang-list" style="margin-top:18px">
                             <div class="lang-row">
-                                <div><b>Spanish</b><span>Native</span></div>
+                                <div><b data-i18n="lang.spanish">Spanish</b><span data-i18n="lang.native">Native</span></div>
                                 <div class="bar"><i style="--w:100%"></i></div>
                             </div>
                             <div class="lang-row">
-                                <div><b>English</b><span>Intermediate-Advanced</span></div>
+                                <div><b data-i18n="lang.english">English</b><span data-i18n="lang.level">Intermediate-Advanced</span></div>
                                 <div class="bar"><i style="--w:72%"></i></div>
                             </div>
                         </div>
@@ -151,30 +155,30 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">Experience</span>
-                        <h2>Where I've worked</h2>
+                        <span class="kicker" data-i18n="exp.kicker">Experience</span>
+                        <h2 data-i18n="exp.title">Where I've worked</h2>
                     </div>
                 </div>
                 <div class="timeline">
                     <article class="card tl-item current reveal">
                         <div class="tl-head">
                             <div>
-                                <h3>Co-founder &amp; Head of Engineering</h3>
+                                <h3 data-i18n="exp.cf.role">Co-founder &amp; Head of Engineering</h3>
                                 <span class="tl-org">CareFlow Solutions</span> · Bogotá, Colombia
                             </div>
-                            <span class="tl-date">Jun 2026 – Present</span>
+                            <span class="tl-date" data-i18n="exp.cf.date">Jun 2026 – Present</span>
                         </div>
-                        <p style="color:var(--text-muted);margin:0">SaaS platform for assisted clinical documentation for nursing teams: nurses fill in guided fields and CareFlow generates a standardized, traceable clinical note ready for review and approval.</p>
+                        <p style="color:var(--text-muted);margin:0" data-i18n="exp.cf.desc">SaaS platform for assisted clinical documentation for nursing teams: nurses fill in guided fields and CareFlow generates a standardized, traceable clinical note ready for review and approval.</p>
                         <div class="collapsible" id="careflow-details">
                             <ul>
-                                <li>Architected and built the product end to end: web frontend and Supabase backend (PostgreSQL, Edge Functions).</li>
-                                <li>Designed a multi-institution model with data isolation through Row Level Security, user, role and session management, and per-institution branding.</li>
-                                <li>Modeled clinical data: patients, auto-saved drafts, note confirmation, shift-to-shift continuity, and retention policies.</li>
-                                <li>Built a clinical rules engine generated automatically (Python) from the nursing-validated clinical book, with auditing and traceability for every rule.</li>
-                                <li>Implemented the shift handover modules with a keyboard-optimized experience and a custom design system.</li>
-                                <li>Set up quality assurance with unit, integration, database (SQL) and end-to-end tests (Playwright).</li>
-                                <li>Built CI/CD with GitHub Actions and separate development, staging and pilot deployments, including environment checks, backups, key rotation and security controls.</li>
-                                <li>Worked directly with nursing professionals to translate clinical needs into software requirements.</li>
+                                <li data-i18n="exp.cf.b1">Architected and built the product end to end: web frontend and Supabase backend (PostgreSQL, Edge Functions).</li>
+                                <li data-i18n="exp.cf.b2">Designed a multi-institution model with data isolation through Row Level Security, user, role and session management, and per-institution branding.</li>
+                                <li data-i18n="exp.cf.b3">Modeled clinical data: patients, auto-saved drafts, note confirmation, shift-to-shift continuity, and retention policies.</li>
+                                <li data-i18n="exp.cf.b4">Built a clinical rules engine generated automatically (Python) from the nursing-validated clinical book, with auditing and traceability for every rule.</li>
+                                <li data-i18n="exp.cf.b5">Implemented the shift handover modules with a keyboard-optimized experience and a custom design system.</li>
+                                <li data-i18n="exp.cf.b6">Set up quality assurance with unit, integration, database (SQL) and end-to-end tests (Playwright).</li>
+                                <li data-i18n="exp.cf.b7">Built CI/CD with GitHub Actions and separate development, staging and pilot deployments, including environment checks, backups, key rotation and security controls.</li>
+                                <li data-i18n="exp.cf.b8">Worked directly with nursing professionals to translate clinical needs into software requirements.</li>
                             </ul>
                         </div>
                         <button class="toggle-more" type="button" aria-expanded="false" aria-controls="careflow-details"><span>Show more</span><svg><use href="#i-chevron"/></svg></button>
@@ -187,17 +191,17 @@
                         <div class="tl-head">
                             <div>
                                 <h3>AI Training Specialist</h3>
-                                <span class="tl-org">Scale AI</span> · Remote (California, USA)
+                                <span class="tl-org">Scale AI</span> · <span data-i18n="exp.scale.place">Remote (California, USA)</span>
                             </div>
-                            <span class="tl-date">Mar 2025 – Nov 2025</span>
+                            <span class="tl-date" data-i18n="exp.scale.date">Mar 2025 – Nov 2025</span>
                         </div>
                         <ul>
-                            <li>Evaluated and refined Large Language Models from industry leaders (OpenAI, Google, Meta), ensuring responses met rigorous standards for factual accuracy, logical coherence, safety, and bias mitigation.</li>
-                            <li>Diagnosed complex issues in logical reasoning, code execution, and data pipelines, delivering structured feedback to guide engineering iterations.</li>
-                            <li>Designed and implemented automated evaluation scripts and tools in Python for data science workflows, significantly reducing manual review time.</li>
+                            <li data-i18n="exp.scale.b1">Evaluated and refined Large Language Models from industry leaders (OpenAI, Google, Meta), ensuring responses met rigorous standards for factual accuracy, logical coherence, safety, and bias mitigation.</li>
+                            <li data-i18n="exp.scale.b2">Diagnosed complex issues in logical reasoning, code execution, and data pipelines, delivering structured feedback to guide engineering iterations.</li>
+                            <li data-i18n="exp.scale.b3">Designed and implemented automated evaluation scripts and tools in Python for data science workflows, significantly reducing manual review time.</li>
                         </ul>
                         <ul class="chip-list">
-                            <li class="chip">LLM evaluation</li><li class="chip">Python</li><li class="chip">QA automation</li><li class="chip">Data pipelines</li>
+                            <li class="chip" data-i18n="chip.llm">LLM evaluation</li><li class="chip">Python</li><li class="chip" data-i18n="chip.qa">QA automation</li><li class="chip" data-i18n="chip.pipelines">Data pipelines</li>
                         </ul>
                     </article>
                 </div>
@@ -209,45 +213,45 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">Projects</span>
-                        <h2>Academic projects</h2>
-                        <p>Built during my Systems Engineering degree at Universidad Distrital.</p>
+                        <span class="kicker" data-i18n="proj.kicker">Projects</span>
+                        <h2 data-i18n="proj.title">Academic projects</h2>
+                        <p data-i18n="proj.desc">Built during my Systems Engineering degree at Universidad Distrital.</p>
                     </div>
                 </div>
                 <div class="grid-cards">
                     <article class="card project reveal">
                         <div class="project-icon"><svg><use href="#i-layers"/></svg></div>
-                        <h3>Automatic API Generator</h3>
-                        <p>Generates REST APIs from relational models, with an XML + Docker Compose workflow to integrate and visualize the generated API.</p>
-                        <span class="meta">Jun 2024 – Jul 2024</span>
+                        <h3 data-i18n="proj.api.title">Automatic API Generator</h3>
+                        <p data-i18n="proj.api.desc">Generates REST APIs from relational models, with an XML + Docker Compose workflow to integrate and visualize the generated API.</p>
+                        <span class="meta" data-i18n="proj.api.date">Jun 2024 – Jul 2024</span>
                         <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">Docker</li></ul>
                     </article>
                     <article class="card project reveal">
                         <div class="project-icon"><svg><use href="#i-db"/></svg></div>
-                        <h3>Laboratory Equipment Manager</h3>
-                        <p>Web app for the sale and rental of laboratory equipment, with user management, loan tracking and inventory tracking.</p>
-                        <span class="meta">Aug 2024 – Dec 2024</span>
+                        <h3 data-i18n="proj.lab.title">Laboratory Equipment Manager</h3>
+                        <p data-i18n="proj.lab.desc">Web app for the sale and rental of laboratory equipment, with user management, loan tracking and inventory tracking.</p>
+                        <span class="meta" data-i18n="proj.lab.date">Aug 2024 – Dec 2024</span>
                         <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">MySQL</li></ul>
                     </article>
                     <article class="card project reveal">
                         <div class="project-icon"><svg><use href="#i-code"/></svg></div>
-                        <h3>SQL Compiler with E-R Diagrams</h3>
-                        <p>A compiler that translates a custom language into SQL and generates entity-relationship diagrams.</p>
-                        <span class="meta">Compilers</span>
+                        <h3 data-i18n="proj.sql.title">SQL Compiler with E-R Diagrams</h3>
+                        <p data-i18n="proj.sql.desc">A compiler that translates a custom language into SQL and generates entity-relationship diagrams.</p>
+                        <span class="meta" data-i18n="proj.sql.date">Compilers</span>
                         <ul class="chip-list"><li class="chip">Python</li><li class="chip">SQL</li></ul>
                     </article>
                     <article class="card project reveal">
                         <div class="project-icon"><svg><use href="#i-cpu"/></svg></div>
-                        <h3>Traffic Sign Recognition</h3>
-                        <p>Deep learning system that recognizes traffic signs using a convolutional neural network.</p>
-                        <span class="meta">Jan 2024 – Apr 2024</span>
+                        <h3 data-i18n="proj.cnn.title">Traffic Sign Recognition</h3>
+                        <p data-i18n="proj.cnn.desc">Deep learning system that recognizes traffic signs using a convolutional neural network.</p>
+                        <span class="meta" data-i18n="proj.cnn.date">Jan 2024 – Apr 2024</span>
                         <ul class="chip-list"><li class="chip">TensorFlow</li><li class="chip">Keras</li><li class="chip">CNN</li></ul>
                     </article>
                     <article class="card project reveal">
                         <div class="project-icon"><svg><use href="#i-heart"/></svg></div>
-                        <h3>Health Appointment System</h3>
-                        <p>Simulation of a health service provider with medical appointment management on a relational database and a desktop interface.</p>
-                        <span class="meta">Aug 2023 – Dec 2023</span>
+                        <h3 data-i18n="proj.eps.title">Health Appointment System</h3>
+                        <p data-i18n="proj.eps.desc">Simulation of a health service provider with medical appointment management on a relational database and a desktop interface.</p>
+                        <span class="meta" data-i18n="proj.eps.date">Aug 2023 – Dec 2023</span>
                         <ul class="chip-list"><li class="chip">Python</li><li class="chip">SQL</li><li class="chip">Tkinter</li></ul>
                     </article>
                 </div>
@@ -259,30 +263,30 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">Skills</span>
-                        <h2>Tools I work with</h2>
+                        <span class="kicker" data-i18n="skills.kicker">Skills</span>
+                        <h2 data-i18n="skills.title">Tools I work with</h2>
                     </div>
                 </div>
                 <div class="skills-grid">
                     <div class="card reveal">
-                        <h3><svg><use href="#i-code"/></svg>Languages</h3>
+                        <h3><svg><use href="#i-code"/></svg><span data-i18n="skills.languages">Languages</span></h3>
                         <ul class="chip-list"><li class="chip">Python</li><li class="chip">JavaScript</li><li class="chip">Java</li><li class="chip">SQL</li><li class="chip">HTML</li><li class="chip">CSS</li></ul>
                     </div>
                     <div class="card reveal">
-                        <h3><svg><use href="#i-layers"/></svg>Frameworks &amp; platforms</h3>
+                        <h3><svg><use href="#i-layers"/></svg><span data-i18n="skills.frameworks">Frameworks &amp; platforms</span></h3>
                         <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">FastAPI</li><li class="chip">Supabase</li><li class="chip">PostgreSQL</li><li class="chip">MySQL</li></ul>
                     </div>
                     <div class="card reveal">
-                        <h3><svg><use href="#i-git"/></svg>DevOps &amp; testing</h3>
+                        <h3><svg><use href="#i-git"/></svg><span data-i18n="skills.devops">DevOps &amp; testing</span></h3>
                         <ul class="chip-list"><li class="chip">Git</li><li class="chip">GitHub Actions</li><li class="chip">Docker</li><li class="chip">Linux</li><li class="chip">Playwright</li></ul>
                     </div>
                     <div class="card reveal">
-                        <h3><svg><use href="#i-cpu"/></svg>Data &amp; AI</h3>
-                        <ul class="chip-list"><li class="chip">Pandas</li><li class="chip">TensorFlow</li><li class="chip">Keras</li><li class="chip">LLM evaluation</li></ul>
+                        <h3><svg><use href="#i-cpu"/></svg><span data-i18n="skills.data">Data &amp; AI</span></h3>
+                        <ul class="chip-list"><li class="chip">Pandas</li><li class="chip">TensorFlow</li><li class="chip">Keras</li><li class="chip" data-i18n="chip.llm">LLM evaluation</li></ul>
                     </div>
                     <div class="card reveal">
-                        <h3><svg><use href="#i-users"/></svg>Soft skills</h3>
-                        <ul class="chip-list"><li class="chip">Leadership</li><li class="chip">Teamwork</li><li class="chip">Organization</li><li class="chip">Proactivity</li><li class="chip">Self-learning</li></ul>
+                        <h3><svg><use href="#i-users"/></svg><span data-i18n="skills.soft">Soft skills</span></h3>
+                        <ul class="chip-list"><li class="chip" data-i18n="soft.leadership">Leadership</li><li class="chip" data-i18n="soft.teamwork">Teamwork</li><li class="chip" data-i18n="soft.organization">Organization</li><li class="chip" data-i18n="soft.proactivity">Proactivity</li><li class="chip" data-i18n="soft.selflearning">Self-learning</li></ul>
                     </div>
                 </div>
             </div>
@@ -293,20 +297,20 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">Certificates</span>
-                        <h2>Certificates &amp; badges</h2>
-                        <p>Courses in cybersecurity, networking, cloud and IoT. Open any certificate to view it full size.</p>
+                        <span class="kicker" data-i18n="cred.kicker">Certificates</span>
+                        <h2 data-i18n="cred.title">Certificates &amp; badges</h2>
+                        <p data-i18n="cred.desc">Courses in cybersecurity, networking, cloud and IoT. Open any certificate to view it full size.</p>
                     </div>
-                    <a class="btn" href="certificates.html">View all certificates<svg><use href="#i-arrow"/></svg></a>
+                    <a class="btn" href="certificates.html"><span data-i18n="cred.viewAll">View all certificates</span><svg><use href="#i-arrow"/></svg></a>
                 </div>
                 <div class="cert-strip reveal" id="cert-strip"></div>
 
                 <div class="section-head reveal" style="margin-top:40px">
                     <div>
-                        <h3 style="font-size:1.25rem">Credly badges</h3>
-                        <p>Verified digital badges issued by Cisco.</p>
+                        <h3 style="font-size:1.25rem" data-i18n="cred.badges">Credly badges</h3>
+                        <p data-i18n="cred.badgesDesc">Verified digital badges issued by Cisco.</p>
                     </div>
-                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener">Credly profile<svg><use href="#i-arrow"/></svg></a>
+                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener"><span data-i18n="cred.profile">Credly profile</span><svg><use href="#i-arrow"/></svg></a>
                 </div>
                 <div class="badges reveal" id="badge-grid"></div>
             </div>
@@ -317,17 +321,17 @@
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <span class="kicker">Education</span>
-                        <h2>Education</h2>
+                        <span class="kicker" data-i18n="edu.kicker">Education</span>
+                        <h2 data-i18n="edu.title">Education</h2>
                     </div>
                 </div>
                 <div class="card edu reveal">
                     <div class="edu-icon"><svg><use href="#i-cap"/></svg></div>
                     <div>
-                        <h3>B.S. in Systems Engineering</h3>
-                        <p>Universidad Distrital Francisco José de Caldas · Sep 2020 – Sep 2026</p>
+                        <h3 data-i18n="edu.degree">B.S. in Systems Engineering</h3>
+                        <p data-i18n="edu.detail">Universidad Distrital Francisco José de Caldas · Sep 2020 – Sep 2026</p>
                     </div>
-                    <span class="chip">Graduated</span>
+                    <span class="chip" data-i18n="edu.status">Graduated</span>
                 </div>
             </div>
         </section>
@@ -336,12 +340,12 @@
         <section class="section" id="contact">
             <div class="container">
                 <div class="card contact reveal">
-                    <h2>Let's work together</h2>
-                    <p>I'm looking for opportunities as a software developer where I can contribute and keep growing. Feel free to reach out.</p>
+                    <h2 data-i18n="contact.title">Let's work together</h2>
+                    <p data-i18n="contact.desc">I'm looking for opportunities as a software developer where I can contribute and keep growing. Feel free to reach out.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="mailto:pipesm062858@gmail.com"><svg><use href="#i-mail"/></svg>Send an email</a>
-                        <button class="btn" type="button" data-copy="pipesm062858@gmail.com"><svg><use href="#i-copy"/></svg>Copy email</button>
-                        <button class="btn" type="button" onclick="window.print()"><svg><use href="#i-printer"/></svg>Print / save as PDF</button>
+                        <a class="btn btn-primary" href="mailto:pipesm062858@gmail.com"><svg><use href="#i-mail"/></svg><span data-i18n="contact.email">Send an email</span></a>
+                        <button class="btn" type="button" data-copy="pipesm062858@gmail.com"><svg><use href="#i-copy"/></svg><span data-i18n="contact.copy">Copy email</span></button>
+                        <button class="btn" type="button" onclick="window.print()"><svg><use href="#i-printer"/></svg><span data-i18n="contact.print">Print / save as PDF</span></button>
                     </div>
                 </div>
             </div>
@@ -351,11 +355,12 @@
     <footer class="footer">
         <div class="container">
             <span>© <span id="year">2026</span> Andres Felipe Salazar Malagon</span>
-            <span><a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/SalazarMalagon" target="_blank" rel="noopener">GitHub</a> · <a href="certificates.html">Certificates</a></span>
+            <span><a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/SalazarMalagon" target="_blank" rel="noopener">GitHub</a> · <a href="certificates.html" data-i18n="footer.certs">Certificates</a></span>
         </div>
     </footer>
 
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

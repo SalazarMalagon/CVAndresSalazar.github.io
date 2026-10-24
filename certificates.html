@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates · Andres Felipe Salazar Malagon</title>
-    <meta name="description" content="Certificates and verified badges earned by Andres Felipe Salazar Malagon: Cisco, Oracle and University of Helsinki.">
+    <title data-i18n="meta.certs.title">Certificates · Andres Felipe Salazar Malagon</title>
+    <meta name="description" data-i18n-attr="content:meta.certs.desc" content="Certificates and verified badges earned by Andres Felipe Salazar Malagon: Cisco, Oracle and University of Helsinki.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a5cc2'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='white'%3EAS%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,16 +33,20 @@
         </defs>
     </svg>
 
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <header class="nav">
         <div class="container">
-            <a class="brand" href="index.html" aria-label="Andres Salazar, home">
+            <a class="brand" href="index.html" aria-label="Andres Salazar, home" data-i18n-attr="aria-label:nav.home">
                 <span class="brand-mark">AS</span>
                 <span class="brand-name">Andres Salazar</span>
             </a>
             <div class="nav-actions">
-                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.lang">
+                    <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+                    <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+                </div>
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-i18n-attr="aria-label:nav.theme">
                     <svg class="sun"><use href="#i-sun"/></svg>
                     <svg class="moon"><use href="#i-moon"/></svg>
                 </button>
@@ -53,24 +57,24 @@
     <main id="main">
         <section class="page-hero">
             <div class="container">
-                <a class="back-link" href="index.html"><svg><use href="#i-back"/></svg>Back to resume</a>
-                <h1>Certificates</h1>
-                <p>Courses I completed in cybersecurity, cloud and the Internet of Things, several of them as part of my graduation requirements. Click any certificate to view it full size, open the PDF or verify it.</p>
+                <a class="back-link" href="index.html"><svg><use href="#i-back"/></svg><span data-i18n="certs.back">Back to resume</span></a>
+                <h1 data-i18n="certs.title">Certificates</h1>
+                <p data-i18n="certs.intro">Courses I completed in cybersecurity, cloud and the Internet of Things, several of them as part of my graduation requirements. Click any certificate to view it full size, open the PDF or verify it.</p>
             </div>
         </section>
 
         <section class="section" style="padding-top:8px">
             <div class="container">
                 <div class="toolbar">
-                    <div class="filters" id="filters" role="group" aria-label="Filter by issuer"></div>
+                    <div class="filters" id="filters" role="group" aria-label="Filter by issuer" data-i18n-attr="aria-label:certs.filterLabel"></div>
                     <label class="search">
-                        <span class="sr-only">Search certificates</span>
+                        <span class="sr-only" data-i18n="certs.searchLabel">Search certificates</span>
                         <svg><use href="#i-search"/></svg>
-                        <input type="search" id="search" placeholder="Search certificates…" autocomplete="off">
+                        <input type="search" id="search" placeholder="Search certificates…" data-i18n-attr="placeholder:certs.search" autocomplete="off">
                     </label>
                 </div>
                 <div class="cert-grid" id="cert-grid" aria-live="polite"></div>
-                <p class="empty" id="empty" hidden>No certificates match your search.</p>
+                <p class="empty" id="empty" hidden data-i18n="certs.empty">No certificates match your search.</p>
             </div>
         </section>
 
@@ -79,10 +83,10 @@
                 <div class="section-head">
                     <div>
                         <span class="kicker">Credly</span>
-                        <h2>Verified badges</h2>
-                        <p>Digital badges issued by Cisco and verifiable on Credly.</p>
+                        <h2 data-i18n="certs.badgesTitle">Verified badges</h2>
+                        <p data-i18n="certs.badgesDesc">Digital badges issued by Cisco and verifiable on Credly.</p>
                     </div>
-                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener">Credly profile<svg><use href="#i-external"/></svg></a>
+                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener"><span data-i18n="cred.profile">Credly profile</span><svg><use href="#i-external"/></svg></a>
                 </div>
                 <div class="badges" id="badge-grid"></div>
             </div>
@@ -92,7 +96,7 @@
     <footer class="footer">
         <div class="container">
             <span>© <span id="year">2026</span> Andres Felipe Salazar Malagon</span>
-            <span><a href="index.html">Resume</a> · <a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a></span>
+            <span><a href="index.html" data-i18n="footer.resume">Resume</a> · <a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a></span>
         </div>
     </footer>
 
@@ -104,24 +108,25 @@
                     <h2 id="viewer-title"></h2>
                     <small id="viewer-sub"></small>
                 </div>
-                <button class="icon-btn" type="button" id="viewer-close" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+                <button class="icon-btn" type="button" id="viewer-close" aria-label="Close" data-i18n-attr="aria-label:viewer.close"><svg><use href="#i-x"/></svg></button>
             </div>
             <div class="modal-tabs" id="viewer-tabs" role="tablist"></div>
             <div class="modal-img">
                 <img id="viewer-img" alt="">
-                <button class="icon-btn modal-nav prev" type="button" id="viewer-prev" aria-label="Previous certificate"><svg><use href="#i-left"/></svg></button>
-                <button class="icon-btn modal-nav next" type="button" id="viewer-next" aria-label="Next certificate"><svg><use href="#i-right"/></svg></button>
+                <button class="icon-btn modal-nav prev" type="button" id="viewer-prev" aria-label="Previous certificate" data-i18n-attr="aria-label:viewer.prev"><svg><use href="#i-left"/></svg></button>
+                <button class="icon-btn modal-nav next" type="button" id="viewer-next" aria-label="Next certificate" data-i18n-attr="aria-label:viewer.next"><svg><use href="#i-right"/></svg></button>
             </div>
             <div class="modal-bottom">
                 <span class="cert-id" id="viewer-id"></span>
-                <a class="btn" id="viewer-verify" target="_blank" rel="noopener"><svg><use href="#i-check"/></svg>Verify</a>
-                <a class="btn" id="viewer-pdf" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>Open PDF</a>
-                <a class="btn btn-primary" id="viewer-download" download><svg><use href="#i-download"/></svg>Download</a>
+                <a class="btn" id="viewer-verify" target="_blank" rel="noopener"><svg><use href="#i-check"/></svg><span data-i18n="viewer.verify">Verify</span></a>
+                <a class="btn" id="viewer-pdf" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg><span data-i18n="viewer.open">Open PDF</span></a>
+                <a class="btn btn-primary" id="viewer-download" download><svg><use href="#i-download"/></svg><span data-i18n="viewer.download">Download</span></a>
             </div>
         </div>
     </div>
 
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/certificates.js"></script>
 </body>

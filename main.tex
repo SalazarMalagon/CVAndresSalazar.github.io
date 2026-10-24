@@ -1,0 +1,198 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\definecolor{primary}{RGB}{0, 75, 135}
+\definecolor{secondary}{RGB}{128, 128, 128}
+\definecolor{textcolor}{RGB}{0, 0, 0}
+\definecolor{highlight}{RGB}{165, 42, 42}
+
+\titleformat{\section}{\large\bfseries\textcolor{primary}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\textcolor{primary}}{}{0em}{}
+
+\begin{document}
+
+\begin{tcolorbox}[colback=primary,colframe=primary,sharp corners]
+\begin{minipage}{0.2\textwidth}
+   % \includegraphics[width=0.9\textwidth]{WhatsApp Image 2025-01-13 at 6.47.44 AM.jpeg}
+\end{minipage}
+\hfill
+\begin{minipage}{0.75\textwidth}
+    \raggedleft
+    \textcolor{white}{\textbf{\Huge Andres Felipe Salazar Malagon}}\\[0.2cm]
+    \textcolor{white}{\large Systems Engineer $|$ Full Stack Developer $|$ Co-founder @ CareFlow}\\[0.2cm]
+    \textcolor{white}{Bogotá, Colombia} \\
+    \textcolor{white}{+57 313 372 2773} \\
+    \textcolor{white}{pipesm062858@gmail.com} \\
+    \href{https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320}{\textcolor{white}{LinkedIn}} \\
+    \href{https://github.com/SalazarMalagon}{\textcolor{white}{GitHub}}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{0cm}
+\section*{\textcolor{primary}{Profile}}
+Systems Engineer from Universidad Distrital Francisco José de Caldas, focused on full stack software development, data, and artificial intelligence. Co-founder and Head of Engineering at CareFlow, a SaaS platform for assisted nursing documentation that turns structured input into clinical notes ready for review and approval. Experienced in evaluating and improving Large Language Models as an AI Training Specialist at Scale AI. I enjoy building solutions to real problems, with intuitive interfaces and solid backends.
+
+\section*{\textcolor{primary}{Skills}}
+\begin{itemize}
+    \item \textbf{Programming:} Python, JavaScript, Java, SQL, HTML, CSS
+    \item \textbf{Frameworks \& Platforms:} React, Flask, FastAPI, Supabase (PostgreSQL, Edge Functions)
+    \item \textbf{DevOps \& Testing:} Git, GitHub Actions (CI/CD), Docker, Linux, Playwright
+    \item \textbf{Data \& AI:} Pandas, NumPy, TensorFlow, Keras, PyTorch, Scikit-learn, OpenCV, Matplotlib, LLM evaluation
+    \item \textbf{Soft skills:} Leadership, responsibility, organization, teamwork, proactivity, self-learning
+\end{itemize}
+
+\section*{\textcolor{primary}{Languages}}
+\noindent \textbf{Spanish:} Native\\
+\textbf{English:} Intermediate-Advanced
+
+\section*{\textcolor{primary}{Experience}}
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Co-founder \& Head of Engineering, CareFlow Solutions}, Bogotá, DC & \textit{06/2026 - Present} \\
+\end{tabularx}
+SaaS platform for assisted clinical documentation for nursing teams: nurses fill in guided fields and CareFlow generates a standardized, traceable clinical note ready for review and approval.
+\begin{itemize}
+    \item Architected and built the product end to end: web frontend and Supabase backend (PostgreSQL, Edge Functions).
+    \item Designed a multi-institution model with data isolation through Row Level Security, user, role and session management, and per-institution branding.
+    \item Modeled clinical data: patients, auto-saved drafts, note confirmation, shift-to-shift continuity, and retention policies.
+    \item Built a clinical rules engine generated automatically (Python) from the nursing-validated clinical book, with auditing and traceability for every rule.
+    \item Implemented the shift handover modules with a keyboard-optimized experience and a custom design system.
+    \item Set up quality assurance with unit, integration, database (SQL) and end-to-end tests (Playwright).
+    \item Built CI/CD with GitHub Actions and separate development, staging and pilot deployments, including environment checks, backups, key rotation and security controls.
+    \item Worked directly with nursing professionals to translate clinical needs into software requirements.
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{AI Training Specialist, Scale AI}, Remote (California, USA) & \textit{03/2025 - 11/2025} \\
+\end{tabularx}
+\begin{itemize}
+    \item Evaluated and refined Large Language Models from industry leaders (OpenAI, Google, Meta), ensuring responses met rigorous standards for factual accuracy, logical coherence, safety, and bias mitigation.
+    \item Diagnosed complex issues in logical reasoning, code execution, and data pipelines, delivering structured feedback to guide engineering iterations.
+    \item Designed and implemented automated evaluation scripts and tools in Python for data science workflows, significantly reducing manual review time.
+\end{itemize}
+
+\section*{\textcolor{primary}{Academic Projects}}
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Automatic API Generator, Universidad Distrital} & \textit{06/2024 - 07/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Created an automatic API generator for relational models using React for the frontend and Flask for the backend.
+    \item Implemented a workflow with XML files and Docker Compose to facilitate the integration and visualization of the generated API.
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Laboratory Equipment Management App, Universidad Distrital} & \textit{08/2024 - 12/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Developed a web application for managing the sale and rental of laboratory equipment using React, Flask, and MySQL.
+    \item Implemented user management, loan, and inventory tracking features.
+\end{itemize}
+
+\noindent\textbf{SQL Compiler with E-R Diagrams, Universidad Distrital}
+\begin{itemize}
+    \item Built a compiler in Python that translates a custom language into SQL and generates entity-relationship diagrams.
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Health Service Appointment System, Universidad Distrital} & \textit{08/2023 - 12/2023} \\
+\end{tabularx}
+\begin{itemize}
+    \item Designed and developed a solution to simulate the operation of an EPS (Health Promotion Entity) with medical appointment management using relational databases and Python, with a Tkinter graphical interface.
+\end{itemize}
+
+\section*{\textcolor{primary}{AI \& ML Projects}}
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Traffic Sign Recognition, Universidad Distrital} & \textit{01/2024 - 04/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Developed a traffic sign recognition system using deep learning with TensorFlow, Keras and a convolutional neural network (CNN).
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Traffic Sign Recognition Improvement} & \textit{05/2024 - 07/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Enhanced an existing CNN model for real-time traffic sign recognition, achieving higher precision and lower latency.
+    \item Applied data augmentation and transfer learning techniques to optimize model performance.
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{NLP Chatbot for Customer Support} & \textit{02/2024 - 04/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Developed an intelligent chatbot using natural language processing libraries (NLTK, TensorFlow) to provide real-time customer support.
+    \item Integrated intent recognition and response generation to enhance user interaction.
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Reinforcement Learning for Automated Trading} & \textit{08/2024 - 12/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Explored reinforcement learning techniques to build an automated trading system.
+    \item Employed deep Q-learning and simulation environments to optimize decision-making strategies.
+\end{itemize}
+
+\section*{\textcolor{primary}{Certifications in AI/ML}}
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Deep Learning Specialization, Coursera} & \textit{03/2024} \\
+\end{tabularx}
+\begin{itemize}
+    \item Comprehensive training in neural networks, CNNs, RNNs and sequences, taught by experts in the field.
+\end{itemize}
+
+\section*{\textcolor{primary}{Education}}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{B.S. in Systems Engineering, Universidad Distrital Francisco José de Caldas}, Bogotá, DC & \textit{09/2020 - 09/2026} \\
+\end{tabularx}
+Graduated.
+
+\section*{\textcolor{primary}{Courses}}
+
+%\noindent\begin{tabularx}{\textwidth}{Xr}
+%    \textbf{ACM-UD/Universidad Distrital Francisco José de Caldas}, \textit{https://sga.acm.ovh/home} & \textit{09/2020 - 05/2023} \\
+%\end{tabularx}
+%\begin{itemize}[itemsep=0pt, topsep=5pt]
+%    \item \textit{ACM GiOS “Introduction to IT in Linux”}
+%    \item \textit{PyGroup PYIA “Python from 0 to 100 with an AI focus”}
+%    \item \textit{GIWEB "Frontend with Flutter"}
+%\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Cisco Networking Academy}, \textit{https://www.netacad.com/es/dashboard} & \textit{12/2024} \\
+\end{tabularx}
+\begin{itemize}[itemsep=0pt, topsep=5pt]
+    \item \textit{Introduction to Cybersecurity}
+    \item \textit{Endpoint Security}
+    \item \textit{Network Defense}
+    \item \textit{Cyber Threat Management}
+    \item \textit{Basic Networking Concepts}
+    \item \textit{Network Support and Security}
+    \item \textit{Network Addressing and Basic Troubleshooting}
+    \item \textit{Network Devices and Initial Configuration}
+\end{itemize}
+
+\noindent\begin{tabularx}{\textwidth}{Xr}
+    \textbf{Udemy}, \textit{https://www.udemy.com/} & \textit{12/2024 - 01/2025} \\
+\end{tabularx}
+\begin{itemize}[itemsep=0pt, topsep=5pt]
+    \item \textit{Complete Linux Course}
+    \item \textit{The Best Java Course with Real-World Applications}
+\end{itemize}
+\end{document}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates · Andres Felipe Salazar Malagon</title>
+    <meta name="description" content="Certificates and verified badges earned by Andres Felipe Salazar Malagon: Cisco, Oracle and University of Helsinki.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a5cc2'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='white'%3EAS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        try {
+            const t = localStorage.getItem("theme");
+            document.documentElement.dataset.theme = t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        } catch { /* storage unavailable */ }
+    </script>
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+            <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+            <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+            <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+            <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+            <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+            <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+            <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m22 4-10 10-3-3"/></symbol>
+        </defs>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav">
+        <div class="container">
+            <a class="brand" href="index.html" aria-label="Andres Salazar, home">
+                <span class="brand-mark">AS</span>
+                <span class="brand-name">Andres Salazar</span>
+            </a>
+            <div class="nav-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="sun"><use href="#i-sun"/></svg>
+                    <svg class="moon"><use href="#i-moon"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <a class="back-link" href="index.html"><svg><use href="#i-back"/></svg>Back to resume</a>
+                <h1>Certificates</h1>
+                <p>Courses I completed in cybersecurity, cloud and the Internet of Things, several of them as part of my graduation requirements. Click any certificate to view it full size, open the PDF or verify it.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:8px">
+            <div class="container">
+                <div class="toolbar">
+                    <div class="filters" id="filters" role="group" aria-label="Filter by issuer"></div>
+                    <label class="search">
+                        <span class="sr-only">Search certificates</span>
+                        <svg><use href="#i-search"/></svg>
+                        <input type="search" id="search" placeholder="Search certificates…" autocomplete="off">
+                    </label>
+                </div>
+                <div class="cert-grid" id="cert-grid" aria-live="polite"></div>
+                <p class="empty" id="empty" hidden>No certificates match your search.</p>
+            </div>
+        </section>
+
+        <section class="section" id="credentials">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="kicker">Credly</span>
+                        <h2>Verified badges</h2>
+                        <p>Digital badges issued by Cisco and verifiable on Credly.</p>
+                    </div>
+                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener">Credly profile<svg><use href="#i-external"/></svg></a>
+                </div>
+                <div class="badges" id="badge-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span>© <span id="year">2026</span> Andres Felipe Salazar Malagon</span>
+            <span><a href="index.html">Resume</a> · <a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a></span>
+        </div>
+    </footer>
+
+    <!-- Certificate viewer -->
+    <div class="modal" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden>
+        <div class="modal-dialog">
+            <div class="modal-top">
+                <div>
+                    <h2 id="viewer-title"></h2>
+                    <small id="viewer-sub"></small>
+                </div>
+                <button class="icon-btn" type="button" id="viewer-close" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+            </div>
+            <div class="modal-tabs" id="viewer-tabs" role="tablist"></div>
+            <div class="modal-img">
+                <img id="viewer-img" alt="">
+                <button class="icon-btn modal-nav prev" type="button" id="viewer-prev" aria-label="Previous certificate"><svg><use href="#i-left"/></svg></button>
+                <button class="icon-btn modal-nav next" type="button" id="viewer-next" aria-label="Next certificate"><svg><use href="#i-right"/></svg></button>
+            </div>
+            <div class="modal-bottom">
+                <span class="cert-id" id="viewer-id"></span>
+                <a class="btn" id="viewer-verify" target="_blank" rel="noopener"><svg><use href="#i-check"/></svg>Verify</a>
+                <a class="btn" id="viewer-pdf" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>Open PDF</a>
+                <a class="btn btn-primary" id="viewer-download" download><svg><use href="#i-download"/></svg>Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/certificates.js"></script>
+</body>
+</html>

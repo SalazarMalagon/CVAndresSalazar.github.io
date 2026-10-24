@@ -3,156 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Felipe Salazar Malagon - Resume</title>
-    <link rel="stylesheet" href="CV.css">
+    <title>Andres Felipe Salazar Malagon · Systems Engineer</title>
+    <meta name="description" content="Systems Engineer, full stack developer and co-founder of CareFlow. Experience in web platforms, data, AI and LLM evaluation.">
+    <meta property="og:title" content="Andres Felipe Salazar Malagon · Systems Engineer">
+    <meta property="og:description" content="Full stack developer and co-founder of CareFlow. Resume, projects and certificates.">
+    <meta property="og:image" content="assets/img/profile.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a5cc2'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='white'%3EAS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        try {
+            const t = localStorage.getItem("theme");
+            document.documentElement.dataset.theme = t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        } catch { /* storage unavailable */ }
+    </script>
 </head>
 <body>
-    <div class="header">
-        <div class="profile-img">
-            <img src="WhatsApp Image 2025-01-13 at 6.47.44 AM.jpeg" alt="Profile Image">
-        </div>
-        <div class="contact-info">
-            <h1>Andres Felipe Salazar Malagon</h1>
-            <p><strong>Systems Engineer | Full Stack Developer | Co-founder @ CareFlow</strong></p>
-            <p>Bogotá, Colombia</p>
-            <p>+57 313 372 2773</p>
-            <p>pipesm062858@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank">LinkedIn</a></p>
-            <p><a href="https://github.com/SalazarMalagon" target="_blank">GitHub</a></p>
-        </div>
-    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+            <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+            <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+            <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+            <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+            <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></symbol>
+            <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+            <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+            <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></symbol>
+            <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+            <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7l10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+            <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+            <symbol id="i-git" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></symbol>
+            <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+            <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+            <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+        </defs>
+    </svg>
 
-    <section class="section" id="profile">
-        <h2>Profile</h2>
-        <p>Systems Engineer from Universidad Distrital Francisco José de Caldas, focused on full stack software development, data, and artificial intelligence. Co-founder and Head of Engineering at CareFlow, a SaaS platform for assisted nursing documentation that turns structured input into clinical notes ready for review and approval. Experienced in evaluating and improving Large Language Models as an AI Training Specialist at Scale AI. I enjoy building solutions to real problems, with intuitive interfaces and solid backends.</p>
-    </section>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python, JavaScript, Java, SQL, HTML, CSS</li>
-            <li><strong>Frameworks &amp; Platforms:</strong> React, Flask, FastAPI, Supabase (PostgreSQL, Edge Functions)</li>
-            <li><strong>DevOps &amp; Testing:</strong> Git, GitHub Actions (CI/CD), Docker, Linux, Playwright</li>
-            <li><strong>Data &amp; AI:</strong> Pandas, TensorFlow, Keras, LLM evaluation</li>
-            <li><strong>Soft skills:</strong> Leadership, responsibility, organization, teamwork, proactivity, self-learning</li>
-        </ul>
-    </section>
+    <header class="nav">
+        <div class="container">
+            <a class="brand" href="#top" aria-label="Andres Salazar, home">
+                <span class="brand-mark">AS</span>
+                <span class="brand-name">Andres Salazar</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#credentials">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="sun"><use href="#i-sun"/></svg>
+                    <svg class="moon"><use href="#i-moon"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                    <svg><use href="#i-menu"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <section class="section" id="languages">
-        <h2>Languages</h2>
-        <p><strong>Spanish:</strong> Native</p>
-        <p><strong>English:</strong> Intermediate-Advanced</p>
-    </section>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="avatar reveal">
+                        <img src="assets/img/profile.jpg" alt="Andres Felipe Salazar Malagon" width="176" height="176">
+                    </div>
+                    <div class="reveal">
+                        <span class="eyebrow"><span class="dot"></span>Building CareFlow · Open to opportunities</span>
+                        <h1>Andres Felipe Salazar Malagon</h1>
+                        <p class="role"><strong>Systems Engineer</strong> · <span class="typed" data-words="Full Stack Developer|Co-founder @ CareFlow|AI Training Specialist">Full Stack Developer</span></p>
+                        <div class="hero-meta">
+                            <span><svg><use href="#i-pin"/></svg>Bogotá, Colombia</span>
+                            <span><svg><use href="#i-mail"/></svg><a href="mailto:pipesm062858@gmail.com">pipesm062858@gmail.com</a></span>
+                            <span><svg><use href="#i-phone"/></svg><a href="tel:+573133722773">+57 313 372 2773</a></span>
+                        </div>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#contact"><svg><use href="#i-mail"/></svg>Get in touch</a>
+                            <a class="btn" href="certificates.html"><svg><use href="#i-award"/></svg>Certificates</a>
+                            <a class="btn" href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+                            <a class="btn" href="https://github.com/SalazarMalagon" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="section" id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Co-founder &amp; Head of Engineering, CareFlow Solutions</h3>
-            <p><em>06/2026 - Present · Bogotá, Colombia</em></p>
-            <p>SaaS platform for assisted clinical documentation for nursing teams: nurses fill in guided fields and CareFlow generates a standardized, traceable clinical note ready for review and approval.</p>
-            <ul>
-                <li>Architected and built the product end to end: web frontend and Supabase backend (PostgreSQL, Edge Functions).</li>
-                <li>Designed a multi-institution model with data isolation through Row Level Security, user, role and session management, and per-institution branding.</li>
-                <li>Modeled clinical data: patients, auto-saved drafts, note confirmation, shift-to-shift continuity, and retention policies.</li>
-                <li>Built a clinical rules engine generated automatically (Python) from the nursing-validated clinical book, with auditing and traceability for every rule.</li>
-                <li>Implemented the shift handover modules with a keyboard-optimized experience and a custom design system.</li>
-                <li>Set up quality assurance with unit, integration, database (SQL) and end-to-end tests (Playwright).</li>
-                <li>Built CI/CD with GitHub Actions and separate development, staging and pilot deployments, including environment checks, backups, key rotation and security controls.</li>
-                <li>Worked directly with nursing professionals to translate clinical needs into software requirements.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>AI Training Specialist, Scale AI</h3>
-            <p><em>03/2025 - 11/2025 · Remote (California, USA)</em></p>
-            <ul>
-                <li>Evaluated and refined Large Language Models from industry leaders (OpenAI, Google, Meta), ensuring responses met rigorous standards for factual accuracy, logical coherence, safety, and bias mitigation.</li>
-                <li>Diagnosed complex issues in logical reasoning, code execution, and data pipelines, delivering structured feedback to guide engineering iterations.</li>
-                <li>Designed and implemented automated evaluation scripts and tools in Python for data science workflows, significantly reducing manual review time.</li>
-            </ul>
-        </div>
-    </section>
+                <div class="stats">
+                    <div class="stat reveal"><b>2026</b><span>Systems Engineering graduate</span></div>
+                    <div class="stat reveal"><b>7</b><span>Certificates</span></div>
+                    <div class="stat reveal"><b>9</b><span>Credly badges</span></div>
+                    <div class="stat reveal"><b>5</b><span>Featured projects</span></div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="projects">
-        <h2>Academic Projects</h2>
-        <div class="job">
-            <h3>Automatic API Generator, Universidad Distrital</h3>
-            <p><em>06/2024 - 07/2024</em></p>
-            <ul>
-                <li>Created an automatic API generator for relational models, using React for the frontend and Flask for the backend.</li>
-                <li>Implemented a workflow with XML files and Docker Compose to facilitate integration and visualization of the generated API.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Laboratory Equipment Management App, Universidad Distrital</h3>
-            <p><em>08/2024 - 12/2024</em></p>
-            <ul>
-                <li>Developed a web application for managing the sale and rental of laboratory equipment, using React, Flask, and MySQL.</li>
-                <li>Implemented user management, loan tracking, and inventory tracking functionalities.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>SQL Compiler with E-R Diagrams, Universidad Distrital</h3>
-            <ul>
-                <li>Built a compiler in Python that translates a custom language into SQL and generates entity-relationship diagrams.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Traffic Sign Recognition, Universidad Distrital</h3>
-            <p><em>01/2024 - 04/2024</em></p>
-            <ul>
-                <li>Developed a traffic sign recognition system using deep learning with TensorFlow, Keras and a convolutional neural network (CNN).</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Health Service Appointment System, Universidad Distrital</h3>
-            <p><em>08/2023 - 12/2023</em></p>
-            <ul>
-                <li>Designed and developed a solution to simulate the operation of a health service provider with appointment management using relational databases and Python, with a Tkinter user interface.</li>
-            </ul>
-        </div>
-    </section>
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">About</span>
+                        <h2>Building software that solves real problems</h2>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <div class="card reveal">
+                        <p>Systems Engineer from Universidad Distrital Francisco José de Caldas, focused on full stack software development, data, and artificial intelligence.</p>
+                        <p>I co-founded <strong>CareFlow</strong>, a SaaS platform for assisted nursing documentation that turns structured input into clinical notes ready for review and approval, where I lead engineering. Before that, I evaluated and improved Large Language Models as an <strong>AI Training Specialist at Scale AI</strong>.</p>
+                        <p>I enjoy building intuitive interfaces backed by solid, well-tested backends, and I'm always learning, with complementary training in networking and cybersecurity.</p>
+                    </div>
+                    <div class="card reveal">
+                        <ul class="facts">
+                            <li><small>Currently</small>Co-founder &amp; Head of Engineering, CareFlow</li>
+                            <li><small>Education</small>B.S. Systems Engineering, 2026</li>
+                            <li><small>Based in</small>Bogotá, Colombia</li>
+                        </ul>
+                        <div class="lang-list" style="margin-top:18px">
+                            <div class="lang-row">
+                                <div><b>Spanish</b><span>Native</span></div>
+                                <div class="bar"><i style="--w:100%"></i></div>
+                            </div>
+                            <div class="lang-row">
+                                <div><b>English</b><span>Intermediate-Advanced</span></div>
+                                <div class="bar"><i style="--w:72%"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="education">
-        <h2>Education</h2>
-        <div class="degree">
-            <h3>B.S. in Systems Engineering, Universidad Distrital Francisco José de Caldas</h3>
-            <p><em>09/2020 - 09/2026 · Graduated</em></p>
-        </div>
-    </section>
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">Experience</span>
+                        <h2>Where I've worked</h2>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <article class="card tl-item current reveal">
+                        <div class="tl-head">
+                            <div>
+                                <h3>Co-founder &amp; Head of Engineering</h3>
+                                <span class="tl-org">CareFlow Solutions</span> · Bogotá, Colombia
+                            </div>
+                            <span class="tl-date">Jun 2026 – Present</span>
+                        </div>
+                        <p style="color:var(--text-muted);margin:0">SaaS platform for assisted clinical documentation for nursing teams: nurses fill in guided fields and CareFlow generates a standardized, traceable clinical note ready for review and approval.</p>
+                        <div class="collapsible" id="careflow-details">
+                            <ul>
+                                <li>Architected and built the product end to end: web frontend and Supabase backend (PostgreSQL, Edge Functions).</li>
+                                <li>Designed a multi-institution model with data isolation through Row Level Security, user, role and session management, and per-institution branding.</li>
+                                <li>Modeled clinical data: patients, auto-saved drafts, note confirmation, shift-to-shift continuity, and retention policies.</li>
+                                <li>Built a clinical rules engine generated automatically (Python) from the nursing-validated clinical book, with auditing and traceability for every rule.</li>
+                                <li>Implemented the shift handover modules with a keyboard-optimized experience and a custom design system.</li>
+                                <li>Set up quality assurance with unit, integration, database (SQL) and end-to-end tests (Playwright).</li>
+                                <li>Built CI/CD with GitHub Actions and separate development, staging and pilot deployments, including environment checks, backups, key rotation and security controls.</li>
+                                <li>Worked directly with nursing professionals to translate clinical needs into software requirements.</li>
+                            </ul>
+                        </div>
+                        <button class="toggle-more" type="button" aria-expanded="false" aria-controls="careflow-details"><span>Show more</span><svg><use href="#i-chevron"/></svg></button>
+                        <ul class="chip-list">
+                            <li class="chip">JavaScript</li><li class="chip">Python</li><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Playwright</li><li class="chip">GitHub Actions</li><li class="chip">Docker</li>
+                        </ul>
+                    </article>
 
-    <section class="section" id="courses">
-        <h2>Courses</h2>
-        <div class="course">
-            <h3>Cisco Networking Academy</h3>
-            <p><em>12/2024</em></p>
-            <ul>
-                <li>Introduction to Cybersecurity</li>
-                <li>Endpoint Security</li>
-                <li>Network Defense</li>
-                <li>Cyber Threat Management</li>
-                <li>Basic Networking Concepts</li>
-                <li>Network Support and Security</li>
-                <li>Network Addressing and Basic Troubleshooting</li>
-                <li>Network Devices and Initial Configuration</li>
-            </ul>
+                    <article class="card tl-item reveal">
+                        <div class="tl-head">
+                            <div>
+                                <h3>AI Training Specialist</h3>
+                                <span class="tl-org">Scale AI</span> · Remote (California, USA)
+                            </div>
+                            <span class="tl-date">Mar 2025 – Nov 2025</span>
+                        </div>
+                        <ul>
+                            <li>Evaluated and refined Large Language Models from industry leaders (OpenAI, Google, Meta), ensuring responses met rigorous standards for factual accuracy, logical coherence, safety, and bias mitigation.</li>
+                            <li>Diagnosed complex issues in logical reasoning, code execution, and data pipelines, delivering structured feedback to guide engineering iterations.</li>
+                            <li>Designed and implemented automated evaluation scripts and tools in Python for data science workflows, significantly reducing manual review time.</li>
+                        </ul>
+                        <ul class="chip-list">
+                            <li class="chip">LLM evaluation</li><li class="chip">Python</li><li class="chip">QA automation</li><li class="chip">Data pipelines</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">Projects</span>
+                        <h2>Academic projects</h2>
+                        <p>Built during my Systems Engineering degree at Universidad Distrital.</p>
+                    </div>
+                </div>
+                <div class="grid-cards">
+                    <article class="card project reveal">
+                        <div class="project-icon"><svg><use href="#i-layers"/></svg></div>
+                        <h3>Automatic API Generator</h3>
+                        <p>Generates REST APIs from relational models, with an XML + Docker Compose workflow to integrate and visualize the generated API.</p>
+                        <span class="meta">Jun 2024 – Jul 2024</span>
+                        <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">Docker</li></ul>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-icon"><svg><use href="#i-db"/></svg></div>
+                        <h3>Laboratory Equipment Manager</h3>
+                        <p>Web app for the sale and rental of laboratory equipment, with user management, loan tracking and inventory tracking.</p>
+                        <span class="meta">Aug 2024 – Dec 2024</span>
+                        <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">MySQL</li></ul>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-icon"><svg><use href="#i-code"/></svg></div>
+                        <h3>SQL Compiler with E-R Diagrams</h3>
+                        <p>A compiler that translates a custom language into SQL and generates entity-relationship diagrams.</p>
+                        <span class="meta">Compilers</span>
+                        <ul class="chip-list"><li class="chip">Python</li><li class="chip">SQL</li></ul>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-icon"><svg><use href="#i-cpu"/></svg></div>
+                        <h3>Traffic Sign Recognition</h3>
+                        <p>Deep learning system that recognizes traffic signs using a convolutional neural network.</p>
+                        <span class="meta">Jan 2024 – Apr 2024</span>
+                        <ul class="chip-list"><li class="chip">TensorFlow</li><li class="chip">Keras</li><li class="chip">CNN</li></ul>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-icon"><svg><use href="#i-heart"/></svg></div>
+                        <h3>Health Appointment System</h3>
+                        <p>Simulation of a health service provider with medical appointment management on a relational database and a desktop interface.</p>
+                        <span class="meta">Aug 2023 – Dec 2023</span>
+                        <ul class="chip-list"><li class="chip">Python</li><li class="chip">SQL</li><li class="chip">Tkinter</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">Skills</span>
+                        <h2>Tools I work with</h2>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="card reveal">
+                        <h3><svg><use href="#i-code"/></svg>Languages</h3>
+                        <ul class="chip-list"><li class="chip">Python</li><li class="chip">JavaScript</li><li class="chip">Java</li><li class="chip">SQL</li><li class="chip">HTML</li><li class="chip">CSS</li></ul>
+                    </div>
+                    <div class="card reveal">
+                        <h3><svg><use href="#i-layers"/></svg>Frameworks &amp; platforms</h3>
+                        <ul class="chip-list"><li class="chip">React</li><li class="chip">Flask</li><li class="chip">FastAPI</li><li class="chip">Supabase</li><li class="chip">PostgreSQL</li><li class="chip">MySQL</li></ul>
+                    </div>
+                    <div class="card reveal">
+                        <h3><svg><use href="#i-git"/></svg>DevOps &amp; testing</h3>
+                        <ul class="chip-list"><li class="chip">Git</li><li class="chip">GitHub Actions</li><li class="chip">Docker</li><li class="chip">Linux</li><li class="chip">Playwright</li></ul>
+                    </div>
+                    <div class="card reveal">
+                        <h3><svg><use href="#i-cpu"/></svg>Data &amp; AI</h3>
+                        <ul class="chip-list"><li class="chip">Pandas</li><li class="chip">TensorFlow</li><li class="chip">Keras</li><li class="chip">LLM evaluation</li></ul>
+                    </div>
+                    <div class="card reveal">
+                        <h3><svg><use href="#i-users"/></svg>Soft skills</h3>
+                        <ul class="chip-list"><li class="chip">Leadership</li><li class="chip">Teamwork</li><li class="chip">Organization</li><li class="chip">Proactivity</li><li class="chip">Self-learning</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials -->
+        <section class="section" id="credentials">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">Certificates</span>
+                        <h2>Certificates &amp; badges</h2>
+                        <p>Courses in cybersecurity, networking, cloud and IoT. Open any certificate to view it full size.</p>
+                    </div>
+                    <a class="btn" href="certificates.html">View all certificates<svg><use href="#i-arrow"/></svg></a>
+                </div>
+                <div class="cert-strip reveal" id="cert-strip"></div>
+
+                <div class="section-head reveal" style="margin-top:40px">
+                    <div>
+                        <h3 style="font-size:1.25rem">Credly badges</h3>
+                        <p>Verified digital badges issued by Cisco.</p>
+                    </div>
+                    <a class="btn" href="https://www.credly.com/users/andres-salazar.0553cc3f/badges" target="_blank" rel="noopener">Credly profile<svg><use href="#i-arrow"/></svg></a>
+                </div>
+                <div class="badges reveal" id="badge-grid"></div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="kicker">Education</span>
+                        <h2>Education</h2>
+                    </div>
+                </div>
+                <div class="card edu reveal">
+                    <div class="edu-icon"><svg><use href="#i-cap"/></svg></div>
+                    <div>
+                        <h3>B.S. in Systems Engineering</h3>
+                        <p>Universidad Distrital Francisco José de Caldas · Sep 2020 – Sep 2026</p>
+                    </div>
+                    <span class="chip">Graduated</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="card contact reveal">
+                    <h2>Let's work together</h2>
+                    <p>I'm looking for opportunities as a software developer where I can contribute and keep growing. Feel free to reach out.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="mailto:pipesm062858@gmail.com"><svg><use href="#i-mail"/></svg>Send an email</a>
+                        <button class="btn" type="button" data-copy="pipesm062858@gmail.com"><svg><use href="#i-copy"/></svg>Copy email</button>
+                        <button class="btn" type="button" onclick="window.print()"><svg><use href="#i-printer"/></svg>Print / save as PDF</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span>© <span id="year">2026</span> Andres Felipe Salazar Malagon</span>
+            <span><a href="https://www.linkedin.com/in/andres-felipe-salazar-malagon-7b4092320" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/SalazarMalagon" target="_blank" rel="noopener">GitHub</a> · <a href="certificates.html">Certificates</a></span>
         </div>
-        <div class="course">
-            <h3>Udemy</h3>
-            <p><em>12/2024 - 01/2025</em></p>
-            <ul>
-                <li>Complete Linux Course</li>
-                <li>The Best Java Course with Real-World Applications</li>
-            </ul>
-        </div>
-        <div class="course">
-            <h3>ACM-UD / Universidad Distrital Francisco José de Caldas</h3>
-            <p><em>09/2020 - 05/2023</em></p>
-            <ul>
-                <li>ACM GiOS "Introduction to IT in Linux"</li>
-                <li>PyGroup PYIA "Python from 0 to 100 with an AI focus"</li>
-                <li>GIWEB "Frontend with Flutter"</li>
-            </ul>
-        </div>
-    </section>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
